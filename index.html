@@ -6,9 +6,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Pro Thermolith® TS B4</title>
-  <meta name="description" content="Pro Thermolith® TS B4 – Der ressourcenschonende Baustoff mit maximierter Wärmeleitfähigkeit auf Basis des Flüssigbodenverfahrens.">
+
+  <title>Pro Thermolith® TS B4 | Wärmeleitfähiges Bettungsmaterial für Kabel- und Leitungsbau</title>
+  <meta name="description" content="Pro Thermolith® TS B4 ist ein ressourcenschonendes, wärmeleitfähiges Bettungsmaterial auf Basis des Flüssigbodenverfahrens – für anspruchsvolle Anwendungen im Kabel- und Leitungsbau.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Forschungsinstitut für Flüssigboden GmbH">
+  <meta name="theme-color" content="#1e293b">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pro Thermolith® TS B4 | Wärmeleitfähiges Bettungsmaterial">
+  <meta property="og:description" content="Ressourcenschonendes Bettungsmaterial mit maximierter Wärmeleitfähigkeit auf Basis des Flüssigbodenverfahrens.">
+  <meta property="og:image" content="Bild1-scaled.png">
+  <meta property="og:locale" content="de_DE">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pro Thermolith® TS B4 | Wärmeleitfähiges Bettungsmaterial">
+  <meta name="twitter:description" content="Ressourcenschonendes Bettungsmaterial mit maximierter Wärmeleitfähigkeit auf Basis des Flüssigbodenverfahrens.">
+  <meta name="twitter:image" content="Bild1-scaled.png">
+
   <link rel="icon" href="favicon.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Pro Thermolith TS B4",
+    "description": "Wärmeleitfähiges Bettungsmaterial auf Basis des Flüssigbodenverfahrens für anspruchsvolle Anwendungen im Kabel- und Leitungsbau.",
+    "image": [
+      "Bild1-scaled.png",
+      "DSC02640-scaled.png",
+      "DJI_20240613142758_0004_V-2-scaled.jpg"
+    ],
+    "brand": {
+      "@type": "Brand",
+      "name": "Pro Thermolith"
+    },
+    "manufacturer": {
+      "@type": "Organization",
+      "name": "Forschungsinstitut für Flüssigboden GmbH"
+    }
+  }
+  </script>
 
   <style>
     *, *::before, *::after {
@@ -34,7 +73,7 @@
 
     html {
       scroll-behavior: smooth;
-      overflow-x: clip;
+      overflow-x: hidden;
     }
 
     body {
@@ -43,7 +82,7 @@
       line-height: 1.7;
       color: var(--navy);
       background: var(--white);
-      overflow-x: clip;
+      overflow-x: hidden;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       word-break: normal;
@@ -59,18 +98,25 @@
       display: block;
     }
 
-    p,
-    h1,
-    h2,
-    h3,
-    a,
-    span,
-    div {
+    p, h1, h2, h3, a, span, div, li {
       overflow-wrap: break-word;
       word-wrap: break-word;
     }
 
-    /* ── HEADER ────────────────────────────────────────────────────────── */
+    svg {
+      flex-shrink: 0;
+    }
+
+    .icon-stroke {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      vector-effect: non-scaling-stroke;
+    }
+
+    /* HEADER */
     header {
       position: fixed;
       top: 0;
@@ -139,7 +185,7 @@
       color: var(--white);
     }
 
-    /* ── HERO ──────────────────────────────────────────────────────────── */
+    /* HERO */
     .hero {
       position: relative;
       min-height: 100svh;
@@ -147,7 +193,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow: clip;
+      overflow: hidden;
       text-align: center;
       padding: calc(var(--header-height) + 40px) 24px 80px;
       width: 100%;
@@ -205,10 +251,6 @@
       word-break: break-word;
     }
 
-    .hero h1 span {
-      color: var(--white);
-    }
-
     .hero-subtitle {
       font-size: clamp(1rem, 2vw, 1.2rem);
       color: rgba(255,255,255,.72);
@@ -235,6 +277,11 @@
       text-align: center;
       white-space: normal;
       word-break: break-word;
+    }
+
+    .btn svg {
+      width: 18px;
+      height: 18px;
     }
 
     .btn-primary {
@@ -288,6 +335,8 @@
     }
 
     .scroll-hint svg {
+      width: 18px;
+      height: 18px;
       animation: bounce 2s infinite;
     }
 
@@ -296,12 +345,12 @@
       50% { transform: translateY(6px); }
     }
 
-    /* ── SECTIONS ──────────────────────────────────────────────────────── */
+    /* SECTIONS */
     section {
       padding: 96px 24px;
       scroll-margin-top: 90px;
       width: 100%;
-      overflow-x: clip;
+      overflow-x: hidden;
     }
 
     .container {
@@ -335,7 +384,7 @@
       line-height: 1.8;
     }
 
-    /* ── RSS SECTION ───────────────────────────────────────────────────── */
+    /* RSS */
     .rss-section {
       background: var(--white);
     }
@@ -370,7 +419,6 @@
       border-radius: var(--radius);
       padding: 28px 24px;
       border: 1px solid var(--border);
-      min-width: 0;
       width: 100%;
     }
 
@@ -388,7 +436,7 @@
       font-weight: 500;
     }
 
-    /* ── PRODUCT SECTION ───────────────────────────────────────────────── */
+    /* PRODUCT */
     .product-section {
       background: var(--navy);
       color: var(--white);
@@ -416,7 +464,6 @@
       padding: 32px 28px;
       transition: background .2s, transform .2s;
       width: 100%;
-      min-width: 0;
     }
 
     .product-card:hover {
@@ -459,7 +506,6 @@
       border-radius: var(--radius);
       padding: 40px 44px;
       width: 100%;
-      min-width: 0;
     }
 
     .product-description p {
@@ -487,11 +533,6 @@
       color: rgba(255,255,255,.7);
       font-size: 15px;
       width: 100%;
-      min-width: 0;
-    }
-
-    .use-case span {
-      min-width: 0;
     }
 
     .use-case-dot {
@@ -503,7 +544,7 @@
       margin-top: 8px;
     }
 
-    /* ── REQUIREMENTS ──────────────────────────────────────────────────── */
+    /* REQUIREMENTS */
     .requirements-section {
       background: var(--light);
     }
@@ -535,7 +576,6 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      min-width: 0;
     }
 
     .req-card:hover {
@@ -552,14 +592,13 @@
     }
 
     .req-card-img.center-middle {
-      object-position: center 40%;
+      object-position: center 45%;
     }
 
     .req-card-body {
       padding: 28px 28px 32px;
       flex: 1;
       width: 100%;
-      min-width: 0;
     }
 
     .req-icon {
@@ -571,15 +610,12 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 16px;
-      flex-shrink: 0;
+      color: var(--red);
     }
 
     .req-icon svg {
       width: 22px;
       height: 22px;
-      stroke: var(--red);
-      fill: none;
-      stroke-width: 2;
     }
 
     .req-card h3 {
@@ -595,7 +631,7 @@
       line-height: 1.75;
     }
 
-    /* ── VALUES TABLE ──────────────────────────────────────────────────── */
+    /* VALUES */
     .values-section {
       background: var(--white);
     }
@@ -614,7 +650,7 @@
       display: block;
     }
 
-    /* ── DOWNLOAD ──────────────────────────────────────────────────────── */
+    /* DOWNLOAD */
     .download-section {
       background: var(--navy);
     }
@@ -629,12 +665,10 @@
       justify-content: space-between;
       gap: 40px;
       width: 100%;
-      min-width: 0;
       overflow: hidden;
     }
 
     .download-card-text {
-      min-width: 0;
       flex: 1 1 auto;
     }
 
@@ -668,7 +702,7 @@
       box-shadow: 0 8px 28px rgba(231,50,58,.5);
     }
 
-    /* ── CONTACT ───────────────────────────────────────────────────────── */
+    /* CONTACT */
     .contact-section {
       background: var(--light);
     }
@@ -676,7 +710,6 @@
     .contact-info {
       max-width: 560px;
       margin-top: 48px;
-      min-width: 0;
     }
 
     .contact-info h3 {
@@ -712,13 +745,9 @@
     .contact-link svg {
       width: 18px;
       height: 18px;
-      stroke: currentColor;
-      fill: none;
-      stroke-width: 2;
-      flex-shrink: 0;
     }
 
-    /* ── VIDEO ─────────────────────────────────────────────────────────── */
+    /* VIDEO */
     .video-section {
       background: var(--navy);
       padding: 80px 24px;
@@ -738,11 +767,11 @@
       display: block;
     }
 
-    /* ── FOOTER ────────────────────────────────────────────────────────── */
+    /* FOOTER */
     footer {
       background: var(--dark);
       padding: 40px 24px;
-      overflow-x: clip;
+      overflow-x: hidden;
     }
 
     .footer-inner {
@@ -758,7 +787,6 @@
     .footer-copy {
       color: rgba(255,255,255,.4);
       font-size: 14px;
-      min-width: 0;
       flex: 1 1 320px;
     }
 
@@ -775,7 +803,6 @@
       display: flex;
       gap: 28px;
       flex-wrap: wrap;
-      min-width: 0;
       justify-content: flex-end;
     }
 
@@ -790,7 +817,7 @@
       color: var(--white);
     }
 
-    /* ── RESPONSIVE ────────────────────────────────────────────────────── */
+    /* RESPONSIVE */
     @media (max-width: 1024px) {
       .product-grid,
       .req-cards {
@@ -933,7 +960,7 @@
       }
     }
 
-    /* ── ANIMATIONS ────────────────────────────────────────────────────── */
+    /* ANIMATIONS */
     .fade-in {
       opacity: 0;
       transform: translateY(24px);
@@ -966,13 +993,12 @@
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
     <div class="header-inner">
       <a class="logo" href="#top" aria-label="Pro Thermolith">
-        <img src="thermolith-45.png" alt="Pro Thermolith TS B4">
+        <img src="thermolith-45.png" alt="Logo Pro Thermolith TS B4">
       </a>
-      <nav>
+      <nav aria-label="Hauptnavigation">
         <a href="#rss">Flüssigbodenverfahren</a>
         <a href="#produkt">Produkt</a>
         <a href="#anforderungen">Anforderungen</a>
@@ -981,242 +1007,255 @@
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" id="top">
-    <video class="hero-video" autoplay muted loop playsinline poster="Bild1-scaled.png">
-      <source src="https://pro-thermolith.de/wp-content/uploads/2025/07/Video_Pro_ThermoLith_TS-B4.mp4" type="video/mp4">
-    </video>
-    <div class="hero-overlay"></div>
+  <main>
+    <section class="hero" id="top">
+      <video class="hero-video" autoplay muted loop playsinline poster="Bild1-scaled.png">
+        <source src="https://pro-thermolith.de/wp-content/uploads/2025/07/Video_Pro_ThermoLith_TS-B4.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
 
-    <div class="hero-content">
-      <div class="badge">
-        Wärmeleitfähigkeitsklasse B4
-      </div>
-      <h1>Pro Thermolith<span>®</span> TS B4</h1>
-      <p class="hero-subtitle">
-        Der ressourcenschonende Baustoff mit maximierter Wärmeleitfähigkeit auf Basis des Flüssigbodenverfahrens
-      </p>
-      <div class="hero-cta">
-        <a href="#kontakt" class="btn btn-primary">Jetzt anfragen</a>
-        <a href="Datenblatt-Thermolit.pdf" class="btn btn-outline" target="_blank" rel="noopener">
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-          </svg>
-          Datenblatt (PDF)
-        </a>
-      </div>
-    </div>
-
-    <div class="scroll-hint" aria-hidden="true">
-      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path d="M12 5v14M5 12l7 7 7-7"/>
-      </svg>
-    </div>
-  </section>
-
-  <!-- RSS VERFAHREN -->
-  <section class="rss-section" id="rss">
-    <div class="container">
-      <div class="fade-in">
-        <div class="section-label">Technologie</div>
-        <h2 class="section-title">Was ist das Flüssigbodenverfahren?</h2>
-      </div>
-
-      <div class="rss-grid">
-        <div class="rss-text fade-in">
-          <p>Das Flüssigbodenverfahren stellt eine zukunftsweisende Innovation im Tiefbau dar. Es basiert auf dem Prinzip, lokal anfallenden Boden – unabhängig von seiner Beschaffenheit – aufzubereiten und wiederzuverwenden.</p>
-          <p>Durch gezielte Rezeptursteuerung wird der Boden temporär in einen fließfähigen Zustand überführt. Nach dem Einbau verfestigt er sich wieder und bildet eine stabile, tragfähige Struktur mit bodenähnlichen Eigenschaften.</p>
-          <p>Diese Methode schont Ressourcen, reduziert Transport- und Entsorgungskosten, minimiert CO₂-Emissionen und ermöglicht eine flexible Anpassung der Materialeigenschaften an unterschiedlichste Anforderungen auf der Baustelle.</p>
-          <p>Die <strong>Forschungsinstitut für Flüssigboden GmbH</strong> verfügt über mehr als 25 Jahre Erfahrung in der Entwicklung, Qualitätssicherung und Anwendung des Flüssigbodenverfahrens und betreut zahlreiche Erdkabelprojekte im Hochspannungsbereich.</p>
+      <div class="hero-content">
+        <div class="badge">
+          Wärmeleitfähigkeitsklasse B4
         </div>
-
-        <div class="rss-stats fade-in">
-          <div class="stat-card">
-            <div class="stat-number">25+</div>
-            <div class="stat-label">Jahre Forschungserfahrung im Flüssigbodenverfahren</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">B4</div>
-            <div class="stat-label">Höchste Wärmeleitfähigkeitsklasse nach ÜNB-Anforderungen</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">100%</div>
-            <div class="stat-label">Wiederlösbarkeit für Reparatur &amp; Erweiterung</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">CO₂</div>
-            <div class="stat-label">Reduzierte Emissionen durch lokale Wiederverwertung</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRODUKT -->
-  <section class="product-section" id="produkt">
-    <div class="container">
-      <div class="fade-in">
-        <div class="section-label">Produktbeschreibung</div>
-        <h2 class="section-title">Pro Thermolith® TS B4 – drei Attribute, ein Produkt</h2>
-        <p class="section-lead" style="color: rgba(255,255,255,.65);">
-          Jeder Namensteil steht für eine klar definierte Eigenschaft, die höchsten Anforderungen im Leitungsbau gerecht wird.
+        <h1>Pro Thermolith® TS B4</h1>
+        <p class="hero-subtitle">
+          Der ressourcenschonende Baustoff mit maximierter Wärmeleitfähigkeit auf Basis des Flüssigbodenverfahrens.
         </p>
-      </div>
-
-      <div class="product-grid">
-        <div class="product-card fade-in">
-          <div class="product-card-tag">Pro Thermolith®</div>
-          <h3>Expertise des FiFB</h3>
-          <p>Basiert auf dem umfassenden technischen Know-how aus über 25 Jahren Flüssigbodenforschung und -anwendung der Forschungsinstitut für Flüssigboden GmbH.</p>
-        </div>
-
-        <div class="product-card fade-in">
-          <div class="product-card-tag">TS</div>
-          <h3>Thermisch stabilisierend</h3>
-          <p>Bettungsmaterial mit gezielt eingestellter Wärmeleitfähigkeit, das thermische Lasten zuverlässig abführt und so Kabelanlagen im Hoch- und Mittelspannungsbereich schützt.</p>
-        </div>
-
-        <div class="product-card fade-in">
-          <div class="product-card-tag">B4</div>
-          <h3>Wärmeleitfähigkeitsklasse 4</h3>
-          <p>Höchste Stufe der Wärmeleitfähigkeit gemäß den technischen Anforderungen der Übertragungsnetzbetreiber – für besonders anspruchsvolle Verlegesituationen.</p>
+        <div class="hero-cta">
+          <a href="#kontakt" class="btn btn-primary">Jetzt anfragen</a>
+          <a href="Datenblatt-Thermolit.pdf" class="btn btn-outline" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path class="icon-stroke" d="M12 3v12"></path>
+              <path class="icon-stroke" d="M7 10l5 5 5-5"></path>
+              <path class="icon-stroke" d="M4 21h16"></path>
+            </svg>
+            Datenblatt (PDF)
+          </a>
         </div>
       </div>
 
-      <div class="product-description fade-in">
-        <p>Pro Thermolith® TS B4 ist eine speziell entwickelte Flüssigboden-Rezeptur für anspruchsvolle Einsatzbereiche im Leitungsbau. Das Produkt erfüllt die höchsten Anforderungen von Übertragungs- und Verteilnetzbetreibern, insbesondere im Hinblick auf Wärmeleitfähigkeit und Wiederlösbarkeit.</p>
-        <p>Durch gezielte Rezeptursteuerung bietet Pro Thermolith® TS B4 eine thermisch stabilisierende Bettung, die langfristig die Betriebssicherheit elektrischer Infrastrukturen unterstützt. Als Lieferprodukt verfügbar – beziehbar bei Mischwerken Ihrer Wahl.</p>
-        <p><strong style="color: rgba(255,255,255,.9);">Der Einsatz empfiehlt sich besonders bei:</strong></p>
+      <div class="scroll-hint" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path class="icon-stroke" d="M12 5v14"></path>
+          <path class="icon-stroke" d="M5 12l7 7 7-7"></path>
+        </svg>
+      </div>
+    </section>
 
-        <div class="use-cases">
-          <div class="use-case"><div class="use-case-dot"></div><span>Kabelkreuzungen mit bestehenden Wärmequellen</span></div>
-          <div class="use-case"><div class="use-case-dot"></div><span>Querungen anderer Infrastrukturen</span></div>
-          <div class="use-case"><div class="use-case-dot"></div><span>Großen Verlegetiefen</span></div>
-          <div class="use-case"><div class="use-case-dot"></div><span>Engen, innerstädtischen Bausituationen</span></div>
+    <section class="rss-section" id="rss">
+      <div class="container">
+        <div class="fade-in">
+          <p class="section-label">Technologie</p>
+          <h2 class="section-title">Was ist das Flüssigbodenverfahren?</h2>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ANFORDERUNGEN -->
-  <section class="requirements-section" id="anforderungen">
-    <div class="container">
-      <div class="req-intro fade-in">
-        <div class="section-label">Netzbetreiber-Anforderungen</div>
-        <h2 class="section-title">Zentrale Anforderungen an Bettungsmaterialien</h2>
-        <p>Für Netzbetreiber auf der Ebene der Übertragungsnetze wie auch im Bereich der Verteilnetze sind spezifische Anforderungen an Bettungsmaterialien entscheidend für den störungsfreien und langlebigen Betrieb ihrer Leitungsinfrastrukturen.</p>
-      </div>
-
-      <div class="req-cards">
-        <div class="req-card fade-in">
-          <img class="req-card-img" src="Image-1.jpg" alt="Wiederlösbarkeit">
-          <div class="req-card-body">
-            <div class="req-icon">
-              <svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1018 0A9 9 0 003 12z"/><path d="M12 8v4l3 3"/></svg>
-            </div>
-            <h3>Wiederlösbarkeit</h3>
-            <p>Das Material muss sich bei Bedarf rückstandsfrei und beschädigungsfrei entfernen lassen, z.&nbsp;B. bei Reparatur- oder Erweiterungsarbeiten. Es muss sich mechanisch leicht lösen lassen, um Beschädigungen bei der Freilegung zu vermeiden.</p>
+        <div class="rss-grid">
+          <div class="rss-text fade-in">
+            <p>Das Flüssigbodenverfahren stellt eine zukunftsweisende Innovation im Tiefbau dar. Es basiert auf dem Prinzip, lokal anfallenden Boden – unabhängig von seiner Beschaffenheit – aufzubereiten und wiederzuverwenden.</p>
+            <p>Durch gezielte Rezeptursteuerung wird der Boden temporär in einen fließfähigen Zustand überführt. Nach dem Einbau verfestigt er sich wieder und bildet eine stabile, tragfähige Struktur mit bodenähnlichen Eigenschaften.</p>
+            <p>Diese Methode schont Ressourcen, reduziert Transport- und Entsorgungskosten, minimiert CO₂-Emissionen und ermöglicht eine flexible Anpassung der Materialeigenschaften an unterschiedlichste Anforderungen auf der Baustelle.</p>
+            <p>Die <strong>Forschungsinstitut für Flüssigboden GmbH</strong> verfügt über mehr als 25 Jahre Erfahrung in der Entwicklung, Qualitätssicherung und Anwendung des Flüssigbodenverfahrens und betreut zahlreiche Erdkabelprojekte im Hochspannungsbereich.</p>
           </div>
-        </div>
 
-        <div class="req-card fade-in">
-          <img class="req-card-img" src="DSC02640-scaled.png" alt="Wärmeleitfähigkeit">
-          <div class="req-card-body">
-            <div class="req-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2v10M12 18a4 4 0 100-8 4 4 0 000 8z"/><path d="M12 2C9 2 7 4 7 7v5M17 7c0-3-2-5-5-5"/></svg>
+          <div class="rss-stats fade-in">
+            <div class="stat-card">
+              <div class="stat-number">25+</div>
+              <div class="stat-label">Jahre Forschungserfahrung im Flüssigbodenverfahren</div>
             </div>
-            <h3>Wärmeleitfähigkeit / Wärmeableitung</h3>
-            <p>Im Bereich der Hochspannung spielt die thermische Performance eine Schlüsselrolle. Bettungsmaterialien müssen Wärme zuverlässig abführen können, um eine Überhitzung der Kabel zu vermeiden und die Lebensdauer zu sichern.</p>
-          </div>
-        </div>
-
-        <div class="req-card fade-in">
-          <img class="req-card-img center-middle" src="IMG_0206-2.jpg" alt="Schwindungsfreiheit">
-          <div class="req-card-body">
-            <div class="req-icon">
-              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+            <div class="stat-card">
+              <div class="stat-number">B4</div>
+              <div class="stat-label">Höchste Wärmeleitfähigkeitsklasse nach ÜNB-Anforderungen</div>
             </div>
-            <h3>Schwindungsfreiheit</h3>
-            <p>Das Bettungsmaterial darf nach dem Einbau keinen Volumenverlust aufweisen – weder durch hydraulische Abbindung noch durch Austrocknung. Nur so kann ein Hohlraum unter oder um das Kabel sicher vermieden werden.</p>
+            <div class="stat-card">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Wiederlösbarkeit für Reparatur &amp; Erweiterung</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">CO₂</div>
+              <div class="stat-label">Reduzierte Emissionen durch lokale Wiederverwertung</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- WERTE / KENNWERTE -->
-  <section class="values-section">
-    <div class="container">
-      <div class="fade-in">
-        <div class="section-label">Technische Kennwerte</div>
-        <h2 class="section-title">Materialparameter &amp; Prüfwerte</h2>
-        <p class="section-lead">Pro Thermolith® TS B4 wurde im Rahmen technischer Prüfverfahren auf die Anforderungen der Energiewirtschaft abgestimmt.</p>
-      </div>
-
-      <div class="values-grid">
-        <img class="values-img fade-in" src="werte-03.png" alt="Technische Kennwerte Pro Thermolith TS B4 – Teil 1">
-        <img class="values-img fade-in" src="werte-04.png" alt="Technische Kennwerte Pro Thermolith TS B4 – Teil 2">
-      </div>
-    </div>
-  </section>
-
-  <!-- DOWNLOAD -->
-  <section class="download-section">
-    <div class="container">
-      <div class="download-card fade-in">
-        <div class="download-card-text">
-          <div class="section-label">Datenblatt</div>
-          <h2>Alle Infos auf einen Blick</h2>
-          <p>Laden Sie das Datenblatt zu Pro Thermolith® TS B4 herunter und erhalten alle wichtigen technischen Informationen kompakt zusammengefasst.</p>
+    <section class="product-section" id="produkt">
+      <div class="container">
+        <div class="fade-in">
+          <p class="section-label">Produktbeschreibung</p>
+          <h2 class="section-title">Pro Thermolith® TS B4 – drei Attribute, ein Produkt</h2>
+          <p class="section-lead" style="color: rgba(255,255,255,.65);">
+            Jeder Namensteil steht für eine klar definierte Eigenschaft, die höchsten Anforderungen im Leitungsbau gerecht wird.
+          </p>
         </div>
 
-        <a href="Datenblatt-Thermolit.pdf" class="btn btn-download" target="_blank" rel="noopener">
-          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-          </svg>
-          Jetzt herunterladen
-        </a>
-      </div>
-    </div>
-  </section>
+        <div class="product-grid">
+          <article class="product-card fade-in">
+            <div class="product-card-tag">Pro Thermolith®</div>
+            <h3>Expertise des FiFB</h3>
+            <p>Basiert auf dem umfassenden technischen Know-how aus über 25 Jahren Flüssigbodenforschung und -anwendung der Forschungsinstitut für Flüssigboden GmbH.</p>
+          </article>
 
-  <!-- KONTAKT -->
-  <section class="contact-section" id="kontakt">
-    <div class="container">
-      <div class="fade-in">
-        <div class="section-label">Kontakt</div>
-        <h2 class="section-title">So beziehen Sie Pro Thermolith® TS B4</h2>
-      </div>
+          <article class="product-card fade-in">
+            <div class="product-card-tag">TS</div>
+            <h3>Thermisch stabilisierend</h3>
+            <p>Bettungsmaterial mit gezielt eingestellter Wärmeleitfähigkeit, das thermische Lasten zuverlässig abführt und so Kabelanlagen im Hoch- und Mittelspannungsbereich schützt.</p>
+          </article>
 
-      <div class="contact-info fade-in">
-        <h3>Forschungsinstitut für Flüssigboden GmbH</h3>
-        <p>Kontaktieren Sie uns – wir helfen Ihnen bei der Materialauswahl, vermitteln geeignete Mischwerke in Ihrer Region und begleiten technische Rückfragen.</p>
-        <a href="mailto:info@fi-fb.de" class="contact-link">
-          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          info@fi-fb.de
-          <svg width="14" height="14" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
+          <article class="product-card fade-in">
+            <div class="product-card-tag">B4</div>
+            <h3>Wärmeleitfähigkeitsklasse 4</h3>
+            <p>Höchste Stufe der Wärmeleitfähigkeit gemäß den technischen Anforderungen der Übertragungsnetzbetreiber – für besonders anspruchsvolle Verlegesituationen.</p>
+          </article>
+        </div>
 
-  <!-- VIDEO -->
-  <section class="video-section">
-    <div class="container">
-      <div class="fade-in" style="text-align:center;">
-        <div class="section-label">Produktvideo</div>
-        <h2 class="section-title" style="color: var(--white);">Pro Thermolith® TS B4 in der Praxis</h2>
-      </div>
+        <div class="product-description fade-in">
+          <p>Pro Thermolith® TS B4 ist eine speziell entwickelte Flüssigboden-Rezeptur für anspruchsvolle Einsatzbereiche im Leitungsbau. Das Produkt erfüllt die höchsten Anforderungen von Übertragungs- und Verteilnetzbetreibern, insbesondere im Hinblick auf Wärmeleitfähigkeit und Wiederlösbarkeit.</p>
+          <p>Durch gezielte Rezeptursteuerung bietet Pro Thermolith® TS B4 eine thermisch stabilisierende Bettung, die langfristig die Betriebssicherheit elektrischer Infrastrukturen unterstützt. Als Lieferprodukt verfügbar – beziehbar bei Mischwerken Ihrer Wahl.</p>
+          <p><strong style="color: rgba(255,255,255,.9);">Der Einsatz empfiehlt sich besonders bei:</strong></p>
 
-      <div class="video-wrapper fade-in">
-        <video controls muted loop preload="metadata" poster="Bild1-scaled.png">
-          <source src="https://pro-thermolith.de/wp-content/uploads/2025/07/Video_Pro_ThermoLith_TS-B4.mp4" type="video/mp4">
-        </video>
+          <div class="use-cases">
+            <div class="use-case"><div class="use-case-dot"></div><span>Kabelkreuzungen mit bestehenden Wärmequellen</span></div>
+            <div class="use-case"><div class="use-case-dot"></div><span>Querungen anderer Infrastrukturen</span></div>
+            <div class="use-case"><div class="use-case-dot"></div><span>Großen Verlegetiefen</span></div>
+            <div class="use-case"><div class="use-case-dot"></div><span>Engen, innerstädtischen Bausituationen</span></div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
+    <section class="requirements-section" id="anforderungen">
+      <div class="container">
+        <div class="req-intro fade-in">
+          <p class="section-label">Netzbetreiber-Anforderungen</p>
+          <h2 class="section-title">Zentrale Anforderungen an Bettungsmaterialien</h2>
+          <p>Für Netzbetreiber auf der Ebene der Übertragungsnetze wie auch im Bereich der Verteilnetze sind spezifische Anforderungen an Bettungsmaterialien entscheidend für den störungsfreien und langlebigen Betrieb ihrer Leitungsinfrastrukturen.</p>
+        </div>
+
+        <div class="req-cards">
+          <article class="req-card fade-in">
+            <img class="req-card-img" src="Image-1.jpg" alt="Anforderung Wiederlösbarkeit bei Bettungsmaterialien">
+            <div class="req-card-body">
+              <div class="req-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle class="icon-stroke" cx="12" cy="12" r="9"></circle>
+                  <path class="icon-stroke" d="M12 8v4l3 3"></path>
+                </svg>
+              </div>
+              <h3>Wiederlösbarkeit</h3>
+              <p>Das Material muss sich bei Bedarf rückstandsfrei und beschädigungsfrei entfernen lassen, z.&nbsp;B. bei Reparatur- oder Erweiterungsarbeiten. Es muss sich mechanisch leicht lösen lassen, um Beschädigungen bei der Freilegung zu vermeiden.</p>
+            </div>
+          </article>
+
+          <article class="req-card fade-in">
+            <img class="req-card-img" src="DSC02640-scaled.png" alt="Anforderung Wärmeleitfähigkeit und Wärmeableitung">
+            <div class="req-card-body">
+              <div class="req-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path class="icon-stroke" d="M12 3v9"></path>
+                  <circle class="icon-stroke" cx="12" cy="16" r="4"></circle>
+                </svg>
+              </div>
+              <h3>Wärmeleitfähigkeit / Wärmeableitung</h3>
+              <p>Im Bereich der Hochspannung spielt die thermische Performance eine Schlüsselrolle. Bettungsmaterialien müssen Wärme zuverlässig abführen können, um eine Überhitzung der Kabel zu vermeiden und die Lebensdauer zu sichern.</p>
+            </div>
+          </article>
+
+          <article class="req-card fade-in">
+            <img class="req-card-img center-middle" src="DJI_20240613142758_0004_V-2-scaled.jpg" alt="Anforderung Schwindungsfreiheit des Bettungsmaterials">
+            <div class="req-card-body">
+              <div class="req-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect class="icon-stroke" x="4" y="4" width="16" height="16" rx="2"></rect>
+                  <path class="icon-stroke" d="M9 9h6v6H9z"></path>
+                </svg>
+              </div>
+              <h3>Schwindungsfreiheit</h3>
+              <p>Das Bettungsmaterial darf nach dem Einbau keinen Volumenverlust aufweisen – weder durch hydraulische Abbindung noch durch Austrocknung. Nur so kann ein Hohlraum unter oder um das Kabel sicher vermieden werden.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="values-section">
+      <div class="container">
+        <div class="fade-in">
+          <p class="section-label">Technische Kennwerte</p>
+          <h2 class="section-title">Materialparameter &amp; Prüfwerte</h2>
+          <p class="section-lead">Pro Thermolith® TS B4 wurde im Rahmen technischer Prüfverfahren auf die Anforderungen der Energiewirtschaft abgestimmt.</p>
+        </div>
+
+        <div class="values-grid">
+          <img class="values-img fade-in" src="werte-03.png" alt="Technische Kennwerte Pro Thermolith TS B4 Teil 1">
+          <img class="values-img fade-in" src="werte-04.png" alt="Technische Kennwerte Pro Thermolith TS B4 Teil 2">
+        </div>
+      </div>
+    </section>
+
+    <section class="download-section">
+      <div class="container">
+        <div class="download-card fade-in">
+          <div class="download-card-text">
+            <p class="section-label">Datenblatt</p>
+            <h2>Alle Infos auf einen Blick</h2>
+            <p>Laden Sie das Datenblatt zu Pro Thermolith® TS B4 herunter und erhalten alle wichtigen technischen Informationen kompakt zusammengefasst.</p>
+          </div>
+
+          <a href="Datenblatt-Thermolit.pdf" class="btn btn-download" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path class="icon-stroke" d="M12 3v12"></path>
+              <path class="icon-stroke" d="M7 10l5 5 5-5"></path>
+              <path class="icon-stroke" d="M4 21h16"></path>
+            </svg>
+            Jetzt herunterladen
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="kontakt">
+      <div class="container">
+        <div class="fade-in">
+          <p class="section-label">Kontakt</p>
+          <h2 class="section-title">So beziehen Sie Pro Thermolith® TS B4</h2>
+        </div>
+
+        <div class="contact-info fade-in">
+          <h3>Forschungsinstitut für Flüssigboden GmbH</h3>
+          <p>Kontaktieren Sie uns – wir helfen Ihnen bei der Materialauswahl, vermitteln geeignete Mischwerke in Ihrer Region und begleiten technische Rückfragen.</p>
+          <a href="mailto:info@fi-fb.de" class="contact-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect class="icon-stroke" x="3" y="5" width="18" height="14" rx="2"></rect>
+              <path class="icon-stroke" d="M3 7l9 6 9-6"></path>
+            </svg>
+            info@fi-fb.de
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path class="icon-stroke" d="M5 12h14"></path>
+              <path class="icon-stroke" d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-section">
+      <div class="container">
+        <div class="fade-in" style="text-align:center;">
+          <p class="section-label">Produktvideo</p>
+          <h2 class="section-title" style="color: var(--white);">Pro Thermolith® TS B4 in der Praxis</h2>
+        </div>
+
+        <div class="video-wrapper fade-in">
+          <video controls muted loop preload="metadata" poster="Bild1-scaled.png">
+            <source src="https://pro-thermolith.de/wp-content/uploads/2025/07/Video_Pro_ThermoLith_TS-B4.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer>
     <div class="footer-inner">
       <div class="footer-copy">
